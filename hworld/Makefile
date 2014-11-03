@@ -4,6 +4,9 @@ PKG_NAME:=hworld
 
 PKG_VERSION:=0.0.1
 PKG_RELEASE:=1
+PKG_SOURCE_URL:=https://github.com/ethanmorris/ExampleSource
+PKG_SOURCE_PROTO:=git
+PKG_BRANCH:=master
 
 include $(INCLUDE_DIR)/package-version-override.mk
 include $(INCLUDE_DIR)/package.mk
