@@ -27,6 +27,8 @@ endef
 define Package/hworld/install
 	$(INSTALL_DIR) $(1)/etc
 	$(INSTALL_BIN) ./files/config $(1)/etc
+	$(INSTALL_DIR) $(1)/usr/bin/
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/hworld $(1)/usr/bin/
 endef
 
 # NO TABS, NO SPACES
