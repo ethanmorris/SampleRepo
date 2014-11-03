@@ -24,8 +24,8 @@ An example program
 endef
 
 define Package/hworld/install
-        $(INSTALL_DIR) $(1)/etc
-        $(INSTALL_BIN) ./files/config $(1)/etc
+	$(INSTALL_DIR) $(1)/etc
+	$(INSTALL_BIN) ./files/config $(1)/etc
 endef
 
 # NO TABS, NO SPACES
