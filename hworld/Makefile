@@ -1,12 +1,14 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=hworld
-
+PKG_SOURCE_PROTO:=git
 PKG_VERSION:=0.0.1
 PKG_RELEASE:=1
 PKG_SOURCE_URL:=https://github.com/ethanmorris/ExampleSource
-PKG_SOURCE_PROTO:=git
 PKG_BRANCH:=master
+PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
+PKG_SOURCE_VERSION:=300f1dbebb89763a5b956d491397cb7d98c14d08
+PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 
 include $(INCLUDE_DIR)/package-version-override.mk
 include $(INCLUDE_DIR)/package.mk
@@ -16,7 +18,6 @@ define Package/hworld
   CATEGORY:=Sample
   SUBMENU:=Apps
   TITLE:=Hello World
-  DEPENDS:=
 endef
 
 define Package/hworld/description
