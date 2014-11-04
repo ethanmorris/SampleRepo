@@ -17,5 +17,7 @@ From build root, add this line to feeds.conf:
 src-git SampleRepo https://github.com/ethanmorris/SampleRepo
 
 make package/symlinks
+
 make menuconfig
+
 Sample > Apps > hworld
