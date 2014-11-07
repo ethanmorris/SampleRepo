@@ -3,6 +3,8 @@ Sample Repo / Hello World Program
 
 Your repository should contain your feed with subdirectories: 'files' (containing config), and 'prebuilt' (containing IPKs for the corresponding architecture). The example program is as follows:
 
+/feed/README.md
+
 /feed/Makefile
 
 /feed/files/config
